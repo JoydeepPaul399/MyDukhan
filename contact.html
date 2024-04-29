@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyDukhan</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="slide.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="service.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+    <nav class="flex navbar">
+        <div class="logo "><a class="flex" href="#">MyDukhan</a></div>
+        <div class="menu">
+            <ul class="flex">
+                <li><a class="flex" href="index.html">Home</a></li>
+                <li><a class="flex" href="services.html">View Services</a></li>
+                <li><a class="flex" href="contact.html">Contact Us</a></li>
+                <li><button id="login" class="btn">Login</button></li>
+                <li><button class="btn signup-modal-js">SignUp</button></li>
+                <li>
+                    <form action="login.php"><input type="search" name="search" class="search" id="search"
+                            placeholder="Search">
+                </li>
+                <li><button class="btn" type="submit">Search</button></li>
+                </form>
+            </ul>
+        </div>
+    </nav>
+    
+    <div id="loginModal" class="overlay hide">
+        <div class="boxes">
+            <form class="loginHandler flex flx-dir-clm" action="login.php" onsubmit="return validateLogin()">
+                <p id="cencel" class="cencel flex">&#128473;</p>
+                <label class="login-label" for="username">Enter Your User Name</label>
+                <input class="input-box" type="text" name="username" id="username" placeholder="Username">
+                <label class="login-label" for="password">Enter Your Password</label>
+                <input class="input-box" type="password" name="password" id="password" placeholder="Password">
+                <span id="error"></span>
+                <button class="btn" type="submit">Login Me</button>
+            </form>
+            <p class="posi-btn">Let's create an account <button id="login-signup"
+                    class="btn-new signup-modal signup-modal-js">Click Here</button></p>
+        </div>
+    </div>
+
+    <!-- Signup Modal -->
+    <div id="signupModal" class="overlay hide">
+        <div class="boxes">
+            <form class="loginHandler flex flx-dir-clm" action="login.php">
+                <p id="cencelsin" class="cencel flex">&#128473;</p>
+                <label class="login-label" for="username-sin">Enter Your Name</label>
+                <input class="input-box" type="text" name="username-sin" id="username-sin" placeholder="Your Name">
+                <label class="login-label" for="username-1">Enter an User Name</label>
+                <input class="input-box" type="text" name="username-1" id="username-1" placeholder="Your User Name">
+                <label class="login-label" for="password-sin">Enter Your Password</label>
+                <input class="input-box" type="password" name="password-sin" id="password-sin" placeholder="Password">
+                <label class="login-label" for="cpassword-1">Confirm Your Password</label>
+                <input class="input-box" type="password" name="cpassword-1" id="cpassword-1" placeholder="Password">
+                <span id="error"></span>
+                <button class="btn" type="submit">SignUp</button>
+            </form>
+
+        </div>
+    </div>
+    <main class="contact-main-tag">
+    <section>
+        <div class="contact-info">
+
+            <form class="flex flx-dir-clm box-center" action="contact.php">
+                <h3 class="text-center m-10">Request For a callback</h3>
+                <p class="text-center f-size-14 text-decoration-underline"><label for="name">Enter Your Name</label></p>
+                <input class="req-input" type="text" name="name" id="name" placeholder="Your name">
+                <p class="text-center f-size-14 text-decoration-underline"><label for="number">Enter Your Mobile Number</label></p>
+                <input class="req-input" type="number" name="number" id="number" placeholder="Mobile Numer">
+                <button class="btn req-btn" type="submit">Request</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="text-center">
+        <p class="m-10">Or</p>
+        <a class="btn no-underline m-10" href="tel:1234567890">Call Us</a>
+        <a class="btn no-underline m-10" href="mailto: example@gmail.com">Email Us</a>
+    </section>
+
+</main>
+    
+    <footer class="footer-card">
+        <div class="footer-box">
+            <div class="footer-box-s flex">
+                <div class="footer-menu flex">
+                    <div class="logo "><a href="#">MyDukhan</a></div>
+                    <div class="copyright">All rights reserved © <span>MyDukhan.com</span> 2024</div>
+                </div>
+                <div class="social-media-items flex">
+                    <a href="#">
+                        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            class="w-30 h-30" viewBox="0 0 24 24">
+                            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            class="w-30 h-30" viewBox="0 0 24 24">
+                            <path
+                                d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                            </path>
+                        </svg>
+                    </a>
+
+                    <a href="#"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" class="w-30 h-30" viewBox="0 0 24 24">
+                            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                        </svg></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+    <script src="contact.js"></script>
+</body>
+
+</html>

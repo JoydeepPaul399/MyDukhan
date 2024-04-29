@@ -1,0 +1,85 @@
+.loginHandler, .signupModal{
+    background-color: rgba(235, 223, 223, 0.89);
+    margin: auto;
+    width: 50%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    position: relative;
+    border-radius: 10px;
+}
+
+.boxes{
+    height: 60vh;
+    margin-top: 30px;
+    position: fixed;
+    width: 100%;
+    border-radius: 10px;
+    z-index: 100;
+}
+
+.login-label{
+    font-size: 16px;
+}
+
+.input-box{
+    padding: 3px 28px;
+    text-align: start;
+    outline: none;
+    border-radius: 5px;
+}
+
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 100001;
+}
+
+.cencel{
+    position: absolute;
+    top: 1px;
+    left: 95%;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
+
+.cencel:hover{
+    background-color: red;
+    height: 20px;
+    width: 30px;
+    border-radius: 5px;
+}
+
+.posi-btn{
+    position: absolute;
+    left: 43%;
+    top: 350px;
+    font-size: 12px;
+    
+}
+
+.btn-new{
+    border: none;
+    cursor: pointer;
+    background-color: inherit;
+    outline: none;
+    text-decoration: underline;
+}
+
+.btn-new:hover{
+    background-color: green;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+}
+
+#error{
+    color: red;
+    font-size: 13px;
+}

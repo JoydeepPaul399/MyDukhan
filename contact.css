@@ -1,0 +1,24 @@
+.contact-info{
+    width: 100%;
+    height: 300px;
+    /* background-color: red; */
+}
+
+.box-center{
+    margin: 17px 512px;
+    gap: 10px;
+}
+
+.req-input{
+    padding: 10px 10px;
+    border-radius: 5px;
+    outline: none;
+}
+
+.req-btn{
+    margin: 10px 139px;
+}
+
+.contact-main-tag{
+    height: 80vh;
+}

@@ -1,0 +1,61 @@
+.flex{
+    display: flex;
+}
+
+.flx-dir-clm{
+    flex-direction: column;
+}
+
+.center{
+    align-items: center;
+}
+
+.hide{
+    display: none;
+}
+
+.show{
+    display: flex;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.underline{
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+
+.block{
+    display: block;
+    margin: auto;
+}
+
+.w-30{
+    width: 30px;
+}
+
+.h-30{
+    height: 30px;
+}
+
+.m-10{
+    margin: 10px;
+}
+
+.f-size-14{
+    font-size: 14px;
+}
+
+.no-underline{
+    text-decoration: none;
+}
+
+.inline-block{
+    display: inline-block;
+}
+
+.text-decoration-underline{
+    text-decoration: underline;
+}

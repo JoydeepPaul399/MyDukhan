@@ -1,0 +1,26 @@
+.service-card{
+    max-height: 900px;
+    width: 470px;
+    border-radius: 12px;
+    justify-content: center;
+    background-color: rgb(247, 236, 236);
+    box-shadow: 12px 23px 18px 7px rgba(0, 0, 0, 0.3);
+}
+
+.service-panel{
+    /* background-color: rgb(247, 236, 236); */
+    
+    gap: 17px;
+    margin:82px 70px;
+}
+
+.service-img{
+    width: 95%;
+    display: inline-block;
+    margin: 10px 10px;
+    border-radius: px;
+}
+
+.request-margin{
+    margin: 10px 137px;
+}

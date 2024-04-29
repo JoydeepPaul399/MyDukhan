@@ -1,0 +1,20 @@
+.footer-card{
+    width: 100%;
+}
+.footer-box-s{
+    justify-content: space-between;
+}
+
+.social-media-items{
+    justify-content: flex-end;
+    gap: 24px;
+}
+
+.footer-box{
+    width: 90%;
+    margin: 10px auto;
+}
+
+.copyright{
+    margin: 15px 21px;
+}
